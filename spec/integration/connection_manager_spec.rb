@@ -90,7 +90,7 @@ module WebsocketRails
             ChatController.any_instance.should_receive(:error_occurred)
             @server.call( env )
             socket.on_error
-          end
+          endx
         end
 
         context "client disconnects" do
